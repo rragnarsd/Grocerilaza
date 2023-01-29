@@ -1,13 +1,9 @@
-import { useCart } from "react-use-cart";
 import { Card, Table, Row, Button } from 'react-bootstrap';
-
-
-import ItemsArray from "@/components/itemsArray";
-import { useRouter } from "next/router";
-
-
 import { UserFormContext } from "@/context/FormContext";
+import { useRouter } from "next/router";
+import { useCart } from "react-use-cart";
 import React, { useContext, useState } from "react";
+import ItemsArray from "@/components/itemsArray";
 
 
 function Checkout() {
@@ -42,7 +38,7 @@ function Checkout() {
                                         <h4>Basic Information</h4>
                                     </div>
                                     <div className="card-body">
-                                        {/* <UserForm /> */}
+                                    
                                         <form>
                                             <Row className="row">
                                                 <div className="col-md-6">
@@ -97,7 +93,6 @@ function Checkout() {
                             <div className="col-md-5">
                                 <Card className="mb-4">
                                     <Card.Body>
-                                        {/* <RadioButtons /> */}
                                         <div>
                                             <h5>Shipping Options</h5>
 
