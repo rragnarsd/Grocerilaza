@@ -13,8 +13,8 @@ function NavBarShop() {
 
   return <Navbar bg="dark" variant="dark" sticky="top">
       <Container>
-        <Navbar.Brand href="/" className="shopName h1 fs-2">Grocerilaza</Navbar.Brand>
-        <Navbar.Toggle />
+        <Navbar.Brand href="/" className="shopName h2 fs-2">Grocerilaza</Navbar.Brand>
+
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
             <Link href="/cart">

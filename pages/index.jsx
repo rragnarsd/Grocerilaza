@@ -15,7 +15,7 @@ function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Row md={2} xs={1} lg={3} className="g-4">
+      <Row md={2} xs={1} lg={3} className="g-4 mx-auto">
         {products.map((product) => (
           <Col key={product.id}>
             <Card className="h-100 cardOnHover">

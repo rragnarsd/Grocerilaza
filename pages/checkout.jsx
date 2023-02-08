@@ -8,9 +8,9 @@ import ItemsArray from "@/components/itemsArray";
 
 function Checkout() {
     const { items } = useCart();
-    
+
     const router = useRouter()
-    const { formData, setFormData, submitForm, radio, setRadio} = useContext(UserFormContext);
+    const { formData, setFormData, submitForm, radio, setRadio } = useContext(UserFormContext);
     const { emptyCart } = useCart();
 
 
@@ -38,7 +38,7 @@ function Checkout() {
                                         <h4>Basic Information</h4>
                                     </div>
                                     <div className="card-body">
-                                    
+
                                         <form>
                                             <Row className="row">
                                                 <div className="col-md-6">
@@ -95,7 +95,6 @@ function Checkout() {
                                     <Card.Body>
                                         <div>
                                             <h5>Shipping Options</h5>
-
                                             <div className='form-check'>
                                                 <input type="radio" id='0' name="radios" className='form-check-input'
                                                     checked={radio === "Pick Up"} value="Pick Up" onChange={(e) => setRadio(e.target.value)}></input>
@@ -129,7 +128,6 @@ function Checkout() {
                                     </tbody>
                                 </Table>
                             </div>
-
                         </div>
                     </div>
                 </div>

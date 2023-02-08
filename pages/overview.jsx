@@ -9,8 +9,7 @@ export default function Overview() {
     return (
         <div className="col-md-12 d-flex align-items-center justify-content-center colIsEmptyHeight">
             <div>
-       
-        
+
                 <Card>
                     <Card.Header>
                         Thank you for your order
@@ -29,11 +28,10 @@ export default function Overview() {
                             <ListGroup.Item>Phone Number: {JSON.stringify(formData.phone)}</ListGroup.Item>
                             <ListGroup.Item>Home Address: {JSON.stringify(formData.address)}</ListGroup.Item>
                             <ListGroup.Item>City: {JSON.stringify(formData.city)}</ListGroup.Item>
-                            <ListGroup.Item>Shipping Option:: {radio}</ListGroup.Item>
+                            <ListGroup.Item>Shipping Option: {radio}</ListGroup.Item>
                         </ListGroup>
                         <Button className="w-100 mt-4" size="lg" href="/" variant="dark">Continue</Button>
                     </Card.Body>
-
                 </Card>
             </div>
 
