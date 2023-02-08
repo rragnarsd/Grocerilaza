@@ -19,14 +19,14 @@ function Home() {
         {products.map((product) => (
           <Col key={product.id}>
             <Card className="h-100 cardOnHover">
-              <Card.Img variant="top" src={product.imgUrl} height='300px' style={{ objectFit: "cover" }} />
+              <Card.Img variant="top" src={product.imgUrl} height='250px' style={{ objectFit: "cover" }} />
               <Card.Body className="d-flex flex-column">
                 <Card.Title className="d-flex justify-content-between align-items-baseline mb-4">
                   <span className="fs-3">{product.name}</span>
                   <span className=" ms-2 text-muted">${product.price}</span>
                 </Card.Title>
                 <Card.Subtitle>
-                  <p className="fs-5 text-muted mt-2">{product.about}</p>
+                  <p className="fs-6 text-muted mt-2">{product.about}</p>
                 </Card.Subtitle>
                 <div className="mt-auto">
                   <Button className="w-100" size='lg' variant='dark' onClick={() => addItem(product)}>
