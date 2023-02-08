@@ -98,8 +98,8 @@ function Checkout() {
 
                                             <div className='form-check'>
                                                 <input type="radio" id='0' name="radios" className='form-check-input'
-                                                    checked={radio === "Pikkolo"} value="Pikkolo" onChange={(e) => setRadio(e.target.value)}></input>
-                                                <label htmlFor="" className='form-check-label'>Pikkolo</label>
+                                                    checked={radio === "Pick Up"} value="Pick Up" onChange={(e) => setRadio(e.target.value)}></input>
+                                                <label htmlFor="" className='form-check-label'>Pick Up</label>
                                             </div>
                                             <div className='form-check'>
                                                 <input type="radio" id='1' name="radios" className='form-check-input'
